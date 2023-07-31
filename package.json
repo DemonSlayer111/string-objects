@@ -1,6 +1,6 @@
 {
   "name": "string-objects",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Simple function that resolves object property accessors found in a given string. Accepts a string and refernce object as arguments.",
   "main": "index.js",
   "scripts": {
