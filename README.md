@@ -13,7 +13,7 @@ npm install string-objects
 The `stringObject` function will attempt to resolve object property accessors found within the provided String that resolve to a String, Number or BigInt, using the provided object as a reference.
 
 ```js
-const stringObject = require("string-object");
+const stringObject = require("string-objects");
 
 const oldString =
   "Hello {user.username}! This package is {package.name}, version {package.version.current}";
@@ -39,7 +39,7 @@ console.log(newString);
 `string-objects` can resolve nested objects, as well as index array elements, however, the last property in the chain will not resolve if it is not a String, Number, or BigInt.
 
 ```js
-const stringObject = require("string-object");
+const stringObject = require("string-objects");
 
 const oldString = "Hello {user.0}! This package is {package.name}";
 
