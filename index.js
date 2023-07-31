@@ -20,12 +20,11 @@ function replaceStringObject(props) {
 
     return returnValue;
   }
-  replace.props = props;
   return replace;
 }
 
 function stringObject(string, props) {
-  const stringObjectRegex = /({[^.{}]+(\.[^.{}]+)+})/g;
+  const stringObjectRegex = /({[^.{}]+(\.[^.{}]+)*})/g;
 
   const updatedString = string.replaceAll(
     stringObjectRegex,
