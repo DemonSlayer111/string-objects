@@ -25,7 +25,7 @@ const object = {
   package: {
     name: "string-objects",
     version: {
-      current: "1.0.0",
+      current: "1.0.1",
     },
   },
 };
@@ -33,7 +33,7 @@ const object = {
 const newString = stringObject(oldString, object);
 
 console.log(newString);
-// Will output 'Hello user! This package is string-objects, version 1.0.0'
+// Will output 'Hello user! This package is string-objects, version 1.0.1'
 ```
 
 `string-objects` can resolve nested objects, as well as index array elements, however, the last property in the chain will not resolve if it is not a String, Number, or BigInt.
