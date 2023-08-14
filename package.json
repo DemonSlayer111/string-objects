@@ -1,9 +1,10 @@
 {
   "name": "string-objects",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Simple function that resolves object property accessors found in a given string. Accepts a string and refernce object as arguments.",
+  "main": "./cjs/index.js",
   "exports": {
-    "types": "./index.d.ts",
+    "types": "./cjs/index.d.ts",
     "require": "./cjs/index.js",
     "import": "./esm/index.js",
     "default": "./cjs/index.js"
