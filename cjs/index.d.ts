@@ -1,15 +1,6 @@
-type Schema =
-  | string
-  | number
-  | bigint
-  | Schema[]
-  | {
-      [key: string]: Schema;
-    };
-declare function stringObject(
-  string: string,
-  props: Exclude<Schema, string | bigint | number>
-): string;
+type SchemaValues = string | number | bigint | SchemaValues[] | {
+    [key: string]: SchemaValues;
+} | Map<string, SchemaValues> | ((...args: string[]) => SchemaValues);
+export type Schema = Exclude<SchemaValues, string | number | bigint>;
+declare function stringObject(string: string, props: Schema): string;
 export default stringObject;
-
-export type Schema = Exclude<Schema, string | number | bigint>;
